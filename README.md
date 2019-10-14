@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+作为个人总结的备份，和微信公众号同步。
 
-You can use the [editor on GitHub](https://github.com/cvictory/cvictory.github.com/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### 微信公众号 : GeekVictory
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+从最开始做业务部门做技术，到后来在中间件部门做技术。时间过得很快，自己也做了部分总结和分享，但是期望自己能有稳定的输出，所以我开始维护公众号了。
+现在自己主要关注java classLoader隔离方案，spring boot相关技术，dubbo等rcp框架。期间看过大量源码，但是很多总结的文章没有产出，会对这部分只是做一个回顾。
+接下来自己学习和工作的方向：
+Dubbo 和 k8s的融合
+go语言：包含怎么用go语言作为业务团队的开发框架
+grpc相关知识：以go grpc语言为研究对象。学习分享protocol buffer的底层原理，http2，grpc在跨语言方面应用。
+service mesh会在到达一定阶段后进行关注，主要关注istio的发展。
+从中可以看到，接下来很大一部分精力会将关注点从java向go转换。如果有精力，会针对grpc构建一个rpc的生态：包括服务注册，服务治理等。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cvictory/cvictory.github.com/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+啰嗦了一大堆，总结起来分享内容会包括：
+* 如果工作内容没变化，接下来分享会包含classLoader隔离的设计，和springboot怎么集成；dubbo的原理和应用；go语言小白上车；grpc的学习。
+* 整体看起来比较技术，中间会穿插一些之前业务部分做的一些架构设计，项目管理知识。
+* 非技术类的读书的读后感。
