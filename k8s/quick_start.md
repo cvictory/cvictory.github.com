@@ -57,9 +57,9 @@ java -jar target/victory-spring-boot-docker-0.0.1-SNAPSHOT.jar
 ```
 #### 构建镜像
 方式一：  
-docker build -t cgjcsl/victory-spring-boot-docker .
+docker build -t cgjcsl/victory-spring-boot-docker .  
 
-方式二：
+方式二：  
 ```
 <plugin>
     <groupId>com.spotify</groupId>
@@ -85,7 +85,7 @@ docker build -t cgjcsl/victory-spring-boot-docker .
  执行 `docker push cgjcsl/victory-spring-boot-docker:v1` 或者使用maven插件进行推送。
 
 #### 常用的其他镜像命令
-docker run --name k-container -p 8080:8080 -d victory-spring-boot-docker  // 直接运行容器，可以通过浏览器访问
+docker run --name k-container -p 8080:8080 -d victory-spring-boot-docker  // 直接运行容器，可以通过浏览器访问  
 docker ps
 docker rm k-container
 
@@ -95,13 +95,19 @@ docker rm k-container
 #### 通过rc创建pod
 运行：
 kubectl run victory-spring-boot-docker-k --image=cgjcsl/victory-spring-boot-docker:v1 --port=8888 --generator=run/v1
+
 可以通过 `kubectl get pods ` 查看
 
+
+
 #### 查看启动日志
+
 kubectl logs victory-spring-boot-docker-k-bzv6m -c victory-spring-boot-docker-k
 #### 进入pod
 kubectl exec -it victory-spring-boot-docker-k-bzv6m bash (或者bash替换成/bin/sh)
+
 具体如下：
+
 ```
 ➜ ~ kubectl exec -it victory-spring-boot-docker-k2-zdxj2 /bin/sh                <--- 登录到容器
 / # curl http://127.0.0.1:8888/greeting
