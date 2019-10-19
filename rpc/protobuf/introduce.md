@@ -1,4 +1,4 @@
-dubbo和spring cloud在国内rpc领域处于领先地位。随着云原生时代的到来，dubbo和spring cloud将命令更多挑战。其中不乏有google背书的gRpc。gRpc有往服务治理方面增强的野心，再加之本身在k8s中的强大地位，实力不可小觑。同时Service Mesh也是野心勃勃，有统一网络通信的模式。
+dubbo和spring cloud在国内rpc领域处于领先地位。随着云原生时代的到来，dubbo和spring cloud将面临更多挑战。其中不乏有google背书的gRpc。gRpc有往服务治理方面增强的野心，再加之本身在k8s中的强大地位，实力不可小觑。同时Service Mesh也是野心勃勃，有统一网络通信的模式。
 
 未来在微服务领域，最后谁将胜出，还需要时间证明。作为rpc领域从业者，需要了解对手，所以会开始学习gRpc和Istio相关内容。 gRpc的关键知识很多，会有单独的文章进行介绍。这里先来学习一波gRpc中最重要的编码器(序列化)：protocol buffers。
 
@@ -8,7 +8,7 @@ dubbo和spring cloud在国内rpc领域处于领先地位。随着云原生时代
 
 提供IDL的能力。通过定义结构化数据存储格式，可以生成各个语言和数据结构和对应的服务。
 
-高效性。序列化的时间复杂度底，空间占用少。可以从google中查到大量的性能对比。
+高效性。序列化的时间复杂度低，空间占用少。可以从google中查到大量的性能对比。
 
 跨平台。go语言中序列化有go-gob ; java语言中序列化方式有hessian，fastjson等。 而跨平台的其他支持有thrift，但是维护的不够稳定。
 
@@ -364,7 +364,7 @@ field_number = 1010 >> 3 = 1
 
 2^1 << 7 + 2^1 = 258
 
-由于desc字段没有只，所以不占用任何传输空间。
+由于desc字段没有值，所以不占用任何传输空间。
 
 ## Protobuf API能力
 
