@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: victory-springboot-v2-headless
+spec:
+  clusterIP: None
+  selector:
+    app: victory-spring-boot
+  ports:
+  - port: 8080
+    targetPort: 8888

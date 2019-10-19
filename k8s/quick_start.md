@@ -1,5 +1,6 @@
-本文介绍快速搭建一个项目，让spring boot可以在最简化的k8s中运行。
+快速搭建一个项目，让spring boot可以在最简化的k8s中运行。
 此示例会作为后续k8s学习的一个demo工程。
+
 ##### 环境说明
 mac + docker + k8s +Minikube
 ## 软件安装
@@ -85,11 +86,12 @@ docker build -t cgjcsl/victory-spring-boot-docker .
  执行 `docker push cgjcsl/victory-spring-boot-docker:v1` 或者使用maven插件进行推送。
 
 #### 常用的其他镜像命令
-docker run --name k-container -p 8080:8080 -d victory-spring-boot-docker  // 直接运行容器，可以通过浏览器访问  
-docker ps
+docker run --name k-container -p 8080:8080 -d victory-spring-boot-docker  // 直接运行容器，可以通过浏览器访问   
+docker ps  
 docker rm k-container
 
 ## k8s容器
+
 启动Minikube :  `minikube start` 
 
 #### 通过rc创建pod

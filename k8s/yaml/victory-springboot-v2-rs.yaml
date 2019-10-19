@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: victory-spring-boot
+  labels:
+   app: victory-spring-boot 
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: victory-spring-boot
+  template:
+    metadata:
+      labels:
+        app: victory-spring-boot
+    spec:
+      containers:
+        - name: victory-spring-boot-v32
+          image: cgjcsl/victory-spring-boot-docker:v3.2
+          imagePullPolicy: Always
