@@ -327,7 +327,7 @@ name := "world"
 r, err := c.SayHello(ctx, &pb.HelloRequest{Name: name, Id: 24, Key: 258})
 ```
 
-HelloRequest结果如下：
+HelloRequest结构如下：
 
 ```
 message HelloRequest {
